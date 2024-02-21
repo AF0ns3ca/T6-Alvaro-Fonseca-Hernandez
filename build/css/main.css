@@ -96,7 +96,6 @@
     gap: 1rem;
   }
   .nav-list li a {
-    position: relative;
     text-decoration: none;
     font-size: 2rem;
     font-family: "Arial, Helvetica, sans-serif";
@@ -110,10 +109,6 @@
   }
   .nav-list li a:hover {
     transition: 0.5s;
-  }
-  .nav-list li a:hover:before {
-    bottom: var(--BottomOffset);
-    opacity: 1;
   }
 
 /* --------------------------------------- Video --------------------------------------- */
@@ -391,3 +386,152 @@ footer {
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
   }
+
+@media screen and (max-width: 530px) {
+
+    :root {
+        --h1-font-size: 6rem;
+        --h1-logo-font-size: 1.7rem;
+        --h2-font-size: 3rem;
+        --h3-font-size: 1.5rem;
+        --span-font-size: 1.2rem;
+        --p-size: 2rem;
+        --h1-color: #ffffff;
+        --span-color: #ffffff;
+        --img-width: 5rem;
+        --author-p-size: 1.5rem;
+        --error-font-size: 1rem;
+        --dark-icon-witdh: 2.5rem;
+        --dark-icon-height: 2.5rem;
+      }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: #1a191a;
+        height: 12rem;
+        font-family: Medieval;
+      }
+
+      .header-logo h1 {
+        font-size: var(--h1-logo-font-size);
+        color: #ffffff;
+        transition: all 0.3s ease;
+        &:hover {
+          color: #ff9500;
+          text-shadow: 0 0 3px #ff9500;
+        }
+      }
+
+      .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        gap: 1rem;
+      }
+
+      .nav-list li a{
+        font-size: 1.3rem;
+      }
+
+      .contenido-video span {
+        font-size: var(--span-font-size);
+        color: var(--span-color);
+        font-family: "Medieval";
+        font-weight: bold;
+        text-shadow: 0 0 3px #ff9500;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0 1rem 0 1rem;
+      }
+      .contenido-video img {
+        padding-bottom: 2rem;
+        width: var(--img-width);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        margin-bottom: 10px;
+      }
+
+      .overlay-img img {
+        border-radius: 5px;
+        height: 25rem;
+      }
+
+         
+}
+
+@media screen and (max-width: 375px) {
+
+    :root {
+        --h1-font-size: 6rem;
+        --h1-logo-font-size: 1.7rem;
+        --h2-font-size: 3rem;
+        --h3-font-size: 1.5rem;
+        --span-font-size: 1.2rem;
+        --p-size: 2rem;
+        --h1-color: #ffffff;
+        --span-color: #ffffff;
+        --img-width: 5rem;
+        --author-p-size: 1.5rem;
+        --error-font-size: 1rem;
+        --dark-icon-witdh: 2.5rem;
+        --dark-icon-height: 2.5rem;
+      }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        background-color: #1a191a;
+        height: 12rem;
+        font-family: Medieval;
+      }
+
+      .header-logo h1 {
+        font-size: var(--h1-logo-font-size);
+        color: #ffffff;
+        transition: all 0.3s ease;
+        &:hover {
+          color: #ff9500;
+          text-shadow: 0 0 3px #ff9500;
+        }
+      }
+
+      .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        gap: 1rem;
+      }
+
+      .nav-list li a{
+        font-size: 1.3rem;
+      }
+
+      .contenido-video span {
+        font-size: var(--span-font-size);
+        color: var(--span-color);
+        font-family: "Medieval";
+        font-weight: bold;
+        text-shadow: 0 0 3px #ff9500;
+        text-align: center;
+        margin-bottom: 1rem;
+        padding: 0 1rem 0 1rem;
+      }
+      .contenido-video img {
+        padding-bottom: 2rem;
+        width: var(--img-width);
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        margin-bottom: 10px;
+      }
+
+         
+}
