@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   function appInit() {
     createGallery();
+    
     let yearSpan = document.getElementById("year");
     yearSpan.textContent = new Date().getFullYear();
   }
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <img loading="lazy" width="200" height="300" src="/build/assets/img/thumb/${i}.jpg" alt="imagen galeria">
           `;
       imagen.onclick = function () {
-        mostrarImagen(i);
+        imageFull(i);
       };
   
       galeria.appendChild(imagen);
